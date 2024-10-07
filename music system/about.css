@@ -1,0 +1,143 @@
+/* Global styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font: italic small-caps bold 12px/30px Georgia, serif;
+   transition: #f4f4f4 0.3s ease, color 0.3s ease;
+   background-color: white;
+   color: white;
+}
+
+/* :root {
+   --background-color:#f4f4f4;
+   --text-color: white;
+   --navbar-background: #333;
+   --navbar-text: #fff;
+   --glass_inner_body-background: #fff;
+   --glass_inner_body-border: none;
+   --glass_inner_body-shadow: rgba(0, 0, 0, 0.1);
+} */
+
+/* About Section */
+.about_section {
+   /* background-image: url('./bg_logo.png');
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover; */
+   background-color: black;
+   color: floralwhite;
+   padding: 30px 20px;
+   text-align: center;
+   margin-top: -93px;
+}
+
+.glass_outer_body {
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+}
+
+.glass_inner_body {
+   border: 1px solid var(--glass_inner_body-border);
+   border-radius: 8px;
+   padding-top: -5px;
+   padding-bottom: -20pc;
+   width: 100%;
+   box-shadow: 0px 4px 8px var(--glass_inner_body-shadow);
+}
+
+.glass {
+   background: rgba(255, 255, 255, 0.2);
+   box-shadow: 0px 0px 5px 1px white;
+   border-radius: 10px;
+   backdrop-filter: blur(17px);
+   padding: 10px;
+   width: auto;
+   margin: 0px 40px 0px 40px;
+}
+
+.glass_inner_body h2 {
+   width: 100%;
+   font-size: 40px;
+   padding: 10px;
+}
+
+hr {
+   width: auto;
+   height: 4px;
+   background-color: white;
+   margin-bottom: 10px;
+}
+
+.glass_inner_body p {
+   font-size: 20px;
+   line-height: 1.6;
+   padding: 2em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   .glass_inner_body {
+      width: 90%;
+      /* Make services take more space on smaller screens */
+   }
+
+   .glass_inner_body h2 {
+      font-size: 40px;
+      /* Adjust heading size */
+   }
+
+   .glass_inner_body p {
+      font-size: 15px;
+      /* Adjust paragraph size */
+   }
+
+   .hamburger {
+      display: inline-block;
+      /* Show hamburger on smaller screens */
+   }
+}
+
+.heading h2 {
+   padding-bottom: 20px;
+   height: auto;
+   width: auto;
+   /* padding-left: -70px; */
+   animation: blinker 1.4s linear infinite;
+}
+
+@keyframes blinker {
+   50% {
+      opacity: 0;
+   }
+}
+
+.about {
+   text-indent: -5em;
+   padding-bottom: 15px;
+}
+
+.share {
+   text-indent: -2.5em;
+   padding-bottom: 15px;
+}
+
+.songs {
+   text-indent: 1em;
+   padding-bottom: 15px;
+}
+
+h1 {
+   font-size: 55px;
+   margin-bottom: 20px;
+}
+
+p {
+   font-size: 18px;
+   margin-bottom: -10px;
+   line-height: 1.6;
+}
